@@ -20,7 +20,6 @@ function initialState() {
     filesSortType: 'lineOfCode',
     toReverseSortFiles: true,
     searchBarValue: '',
-    authorDisplayName: '',
   };
 }
 
@@ -157,7 +156,7 @@ window.vAuthorship = {
         } else {
           const author = repo.users.find((user) => user.name === this.info.author);
           if (author) {
-            this.authorDisplayName = author.displayName;
+            this.info.name = author.displayName;
             this.filesLinesObj = author.fileTypeContribution;
           }
         }
