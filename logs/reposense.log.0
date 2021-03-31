@@ -1,26 +1,27 @@
-Mar 07, 2021 8:46:17 AM reposense.RepoSense getRepoConfigurations
+Mar 31, 2021 9:36:33 AM reposense.RepoSense getRepoConfigurations
 WARNING: No valid configurations in the author-config.csv.
 reposense.parser.InvalidCsvException: No valid configurations in the author-config.csv.
 	at reposense.parser.CsvParser.parse(CsvParser.java:95)
 	at reposense.RepoSense.getRepoConfigurations(RepoSense.java:114)
 	at reposense.RepoSense.main(RepoSense.java:64)
 
-Mar 07, 2021 8:46:17 AM reposense.report.RepoCloner spawnCloneProcess
+Mar 31, 2021 9:36:34 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/reposense/RepoSense.git...
-Mar 07, 2021 8:46:17 AM reposense.report.RepoCloner waitForCloneProcess
+Mar 31, 2021 9:36:34 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/reposense/RepoSense.git to complete...
-Mar 07, 2021 8:46:21 AM reposense.report.RepoCloner waitForCloneProcess
+Mar 31, 2021 9:36:38 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/reposense/RepoSense.git completed!
-Mar 07, 2021 8:46:21 AM reposense.report.RepoCloner getClonedRepoLocation
-WARNING: Exception met while trying to get current branch of https://github.com/reposense/RepoSense.git (master), will skip this repo.
-reposense.git.exception.GitBranchException
-	at reposense.git.GitBranch.getCurrentBranch(GitBranch.java:27)
-	at reposense.report.RepoCloner.getClonedRepoLocation(RepoCloner.java:69)
-	at reposense.report.ReportGenerator.cloneAndAnalyzeRepos(ReportGenerator.java:193)
-	at reposense.report.ReportGenerator.generateReposReport(ReportGenerator.java:114)
-	at reposense.RepoSense.main(RepoSense.java:79)
-
-Mar 07, 2021 8:46:21 AM reposense.report.ReportGenerator generateReposReport
+Mar 31, 2021 9:36:38 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [1/1] Analyzing https://github.com/reposense/RepoSense.git (master)...
+Mar 31, 2021 9:36:38 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/reposense/RepoSense.git (master)...
+Mar 31, 2021 9:36:38 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/reposense/RepoSense.git (master)...
+Mar 31, 2021 9:36:38 AM reposense.authorship.FileInfoExtractor extractFileInfos
+INFO: Extracting relevant file info from https://github.com/reposense/RepoSense.git (master)...
+Mar 31, 2021 9:36:40 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/reposense/RepoSense.git (master) completed!
+Mar 31, 2021 9:36:40 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/publish-RepoSense/publish-RepoSense/reposense-report
-Mar 07, 2021 8:46:21 AM reposense.RepoSense main
-INFO: Elapsed processing time: 4.43 second(s)
+Mar 31, 2021 9:36:40 AM reposense.RepoSense main
+INFO: Elapsed processing time: 7.32 second(s)

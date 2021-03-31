@@ -1,18 +1,1 @@
-{
-  "repoSenseVersion": "0b7e276b40",
-  "reportGeneratedTime": "Sun Mar 7 08:46:17 2021 UTC",
-  "reportGenerationTime": " 4.38 second(s)",
-  "zoneId": "Etc/UTC",
-  "reportTitle": "RepoSense Report",
-  "repos": [],
-  "errorList": [
-    {
-      "repoName": "reposense/RepoSense[master]",
-      "errorMessage": "Failed to clone from https://github.com/reposense/RepoSense.git"
-    }
-  ],
-  "sinceDate": "2021-02-07",
-  "untilDate": "2021-03-07",
-  "isSinceDateProvided": false,
-  "isUntilDateProvided": false
-}
+{"repoSenseVersion":"451f11b74c","reportGeneratedTime":"Wed Mar 31 09:36:34 2021 UTC","reportGenerationTime":" 7.28 second(s)","zoneId":"Etc/UTC","reportTitle":"RepoSense Report","repos":[{"location":{"location":"https://github.com/reposense/RepoSense.git","repoName":"RepoSense","organization":"reposense"},"branch":"master","displayName":"reposense/RepoSense[master]","outputFolderName":"reposense_RepoSense_master"}],"errorList":[],"sinceDate":"2021-02-28","untilDate":"2021-03-31","isSinceDateProvided":false,"isUntilDateProvided":false}
